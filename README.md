@@ -61,8 +61,7 @@ It replicates Instagram’s stories, posts, like animation, and media handling (
 
 ## 📌 Future Improvements
 - Add multiple post feeds  
-- Enable comment section  
-- Add user authentication (with backend)  
+- Enable comment section
 - Improve mobile responsiveness  
 
 ---
@@ -78,4 +77,4 @@ This project is licensed under the **MIT License** – feel free to use and modi
 
 ---
 
-Made with ❤️ by [Your Name](https://github.com/your-username)
+Made with ❤️ by [Manish](https://github.com/manish-850)
