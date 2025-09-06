@@ -55,7 +55,7 @@ It replicates Instagram’s stories, posts, like animation, and media handling (
 ---
 
 ## 📷 Preview
-(Add a screenshot or GIF of your project here)  
+![Instagram UI Preview](./preview.gif)
 
 ---
 
