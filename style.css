@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-y: hidden;
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 0;
+    
+}
+#card{
+    height: 90vh;
+    width: 25vw;
+    border-radius: 20px;
+    box-shadow: 8px 8px 12px #585151;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+#card #full-screen{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    border-radius: 20px;
+    transform: scale(0);
+}
+
+#card #full-screen video{
+    height: 100%;
+    width: 100%;
+    display: none;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    border-radius: 20px;
+    transform: scale(0);
+}
+#card #volume{
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 22.5px;
+    right: 4.5vw;
+    transform: scale(0);
+    cursor: pointer;
+}
+#card >i{
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    padding-top: 1.2px;
+    text-align: center;
+    display: block;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.356);
+    backdrop-filter: blur(1px);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(0);
+}
+#card .ri-close-line{
+    right: 1vw;
+}
+#card #volumeUp{
+    font-size: 20px;
+    padding: 1.2px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.356);
+    backdrop-filter: blur(1px);
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+#card #volumeMute{
+    display: none;
+    font-size: 20px;
+    padding: 1.2px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.356);
+    backdrop-filter: blur(1px);
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+#storiyan{
+    padding: 2.5vh 0vw 0vh 1vw;
+    height: 15%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-bottom: 1px solid #dadada;
+}
+
+#storiyan::-webkit-scrollbar{
+    display: none;
+}
+
+#storiyan .story{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    border: 2px solid greenyellow;
+    display: inline-block;
+    margin-right: 1vw;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#storiyan .story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#container{
+    height: 85%;
+    width: 25vw;
+    background-color: white;
+    padding: 20px 30px;
+    overflow: hidden;
+}
+
+#container img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#container h1{
+    font-size: 18px;
+    font-weight: 500;
+}
+#container p{
+    font-size: 15px;
+}
+#container #icon i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#like2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 50px;
+    opacity: 1;
+    z-index: 12;
+    z-index: -1;
+}
+
+
+@media (max-width:600px) {
+    
+    #card{
+    width: 90vw;
+    height: 80vh;
+    
+}
+
+#card .ri-close-line{
+    right: 1vw;
+}
+#card .ri-volume-up-line{
+    right: 8.5vw;
+}
+}
+
