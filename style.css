@@ -174,7 +174,7 @@ body{
 }
 
 
-@media (max-width:600px) {
+@media (max-width:792px) {
     
     #card{
     width: 90vw;
@@ -188,5 +188,30 @@ body{
 #card .ri-volume-up-line{
     right: 8.5vw;
 }
+
+#storiyan .story {
+    height: 8vh;
+    width: 8vh;
 }
+
+#container {
+    height: 80%;
+    width: 90vw;
+}
+#container h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#container p {
+    font-size: 20px;
+}
+
+#container #icon i {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+
 
